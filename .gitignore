@@ -16,4 +16,7 @@
 !/log/.keep
 /tmp
 
+# Ignore test coverage result
+/coverage
+
 .idea
