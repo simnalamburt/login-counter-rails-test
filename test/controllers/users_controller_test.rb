@@ -50,4 +50,10 @@ class UsersControllerTest < ActionController::TestCase
     json = JSON.parse response.body
     assert json['error_code'] == -4
   end
+
+  test '#user_count' do
+    post :user_count
+    json = JSON.parse response.body
+    assert json['user_count'] == 2
+  end
 end

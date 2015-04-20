@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   post 'signup' => 'users#signup'
   get 'logout' => 'users#logout'
   post 'clearData' => 'users#clear_data'
-  
+  post 'userCount' => 'users#user_count'
+
   # resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
